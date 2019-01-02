@@ -1,0 +1,236 @@
+*{margin: 0;
+	padding:0;
+}
+/*设置公共的宽度  */
+.comWidth{
+width: 1100px;
+margin: 0 auto;	
+}
+/*清楚浮动*/
+.clearfix::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+a{
+    text-decoration:none;
+}
+.toubu{
+    height: 70px;
+    margin: 0 auto; }
+.toubu img{
+	float: left;
+	margin-top: 15px;
+}
+.liebiao{
+height: 70px;
+line-height: 70px;
+margin-left: 80px;
+float: left;
+}
+.liebiao ul{
+height: 70px;
+}
+.liebiao ul li{
+	font-size: 18px;
+	float: left;
+	padding-left: 5px;
+	list-style: none;
+	height: 70px;
+	width: 100px;
+}
+li a{
+	color:black;
+	text-decoration:none;
+	display: block;
+}
+a:hover{
+	color: blue;
+    cursor:pointer;
+}
+.toubu .tubiao1{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png) 0 0;
+    margin-top: 10px;
+}
+.toubu .tubiao2{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/beijing1.png) 0 0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.toubu .tubiao3{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png);
+    background-position:50px 0px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.banner {
+    width: 1920px;
+    margin:0 auto;
+
+}
+.test {
+    position: relative;
+    width:1100px;
+    margin: 0 auto;
+}
+.f{
+position: absolute;
+top: 0;
+left: 0;
+background: url(tupian/banner-background.png)   no-repeat;
+width: 288px;
+height: 300px;
+text-align: center;
+}
+.f .title{
+    font-family:宋体;
+    font-size: 22px;
+    color:#fff;
+    height: 80px;
+    margin-top: 40px;
+}
+.f .tupian a{
+    display: block;
+    background:url(tupian/banner-background2.png) no-repeat;
+    width: 250px;
+    height: 100px;
+    margin-left: 35px;
+}
+.f .centent{
+    color:#ccc;
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+}
+.f .centent a{
+    color:gray;
+}
+.f .centent  a:hover{
+    color: blue;
+}
+.centents{
+    margin-top: 30px;
+}
+.centents  .title{
+    height: 50px;
+    border-bottom: 1px solid gray;
+    width: 1100px;
+color:blue;
+font-size: 22px;
+line-height: 50px;
+}
+.centents .title1{
+    font-size: 14px;
+  margin-left: 30px;
+  color:gray;
+}
+.centents .title a{
+float:right;
+font-size: 14px;
+/*margin-top:-10px;*/
+position: relative;
+top: 10px;
+color:gray;
+}
+.centents .title a:hover{
+    color: blue;
+    cursor:pointer;
+}
+.centents .centent1{
+    margin-right: 1px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 12px;
+    border: 1px solid gray;
+    height:220px;
+    width: 260px;
+    text-align:center;
+    position: relative;
+}
+.centents .centent1 .down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+/*color: blue;*/
+height: 59px;
+width: 100%;
+background: url(tupian/zaixian-centent-background.png) center no-repeat;
+background-size: 100%;
+display: none;
+}
+.centents .centent1:hover .down{
+     cursor:pointer;
+    display: block;
+}
+.centents .centent1 img{
+    padding-top:30px;
+}
+.centents .centent1 .title1{
+       padding-top: 20px;
+          margin-left: -10px;
+    font-size: 16px;
+    color: #000;
+}
+
+.centents .centent1 .title2{
+    padding-top: 20px;
+    font-size: 12px;
+    color:gray;
+}
+.centent2{
+    margin-top: 30px;
+     height: 50px;
+    border-bottom: 1px solid gray;
+    width: 1100px;
+color:blue;
+font-size: 22px;
+line-height: 50px;
+}
+.centent2  a{
+float:right;
+font-size: 14px;
+/*margin-top:-10px;*/
+position: relative;
+top: 10px;
+color:gray;
+}
+ a:hover{
+    color: blue;
+    cursor:pointer;
+}
+.tupian{
+    margin-top: 30px;
+    height: 360px;
+    width: 1150px;
+    margin:0 auto;
+}
+.tupian img{
+    width: 550px;
+float: left;
+margin-left: 15px;
+margin-top: 10px;
+}
+.foots {
+    margin-top: 100px;
+}
+.foots .a{
+    text-align: center;
+}
+.foots .a a{
+    color: #bbb;
+}
+.foots .banquan{
+    text-align: center;
+}
+.foots .banquan a{
+    color:#aaa;
+}

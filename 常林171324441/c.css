@@ -1,0 +1,257 @@
+/*CSS初始化  */
+*{margin: 0;
+	padding:0;
+}
+/*设置公共的宽度  */
+.comWidth{
+width: 1200px;
+margin: 0 auto;	
+}
+/*清楚浮动*/
+.clearfix::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+a{
+    text-decoration:none;
+}
+.toubu{height: 70px;
+width:1100px;
+margin: 0 auto; }
+.toubu img{
+	float: left;
+	margin-top: 15px;
+}
+.liebiao{
+height: 70px;
+line-height: 70px;
+margin-left: 80px;
+float: left;
+}
+.liebiao ul{
+height: 70px;
+}
+.liebiao ul li{
+	font-size: 18px;
+	float: left;
+	padding-left: 5px;
+	list-style: none;
+	height: 70px;
+	width: 100px;
+}
+li a{
+	color:black;
+	text-decoration:none;
+	display: block;
+}
+a:hover{
+	color: blue;
+    cursor:pointer;
+}
+.toubu .tubiao1{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png) 0 0;
+    margin-top: 10px;
+}
+.toubu .tubiao2{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/beijing1.png) 0 0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.toubu .tubiao3{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png);
+    background-position:50px 0px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+#main{
+            width: 1478px;
+            height: 482px;
+            margin: 0 auto;
+            position: relative;
+        
+        }
+        #main .scollimg{
+            width: 1478px;
+            height: 482px;
+            position: relative;
+        }
+        #main .scollimg img{
+            position: absolute;
+            width: 1478px;
+            height: 482px;
+            top: 0;
+            left: 0;
+        }
+        #main .btn{
+            width: 1478px;
+            height: 220px;
+            position: absolute;
+            top:117px;
+            left: 0;
+        }
+        #main .btn>div{
+            width: 100px;
+            height: 220px;
+            background: #fff;
+            opacity: 0;
+        }
+        #main .btn：hover>div{
+            opacity: 0.35;
+        }
+        #main .btn #btnleft{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #main .btn #btnright{
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+        /*左右button里的三角形*/
+        .triangle{
+             margin-top: 50px;
+            width: 0;
+            height: 0;
+            border-width:70px 40px;
+            border-style: solid ;
+        }
+
+        #main .btn #btnleft .triangle{
+            border-color: transparent #ccc transparent  transparent;
+        }
+        #main .btn #btnright .triangle{
+            margin-left: 20px;
+            border-color: transparent transparent transparent #ccc;
+        }
+        #main .item{
+            position: absolute;
+            bottom: 30px;
+            left: 70px;
+            width: 200px;
+            height: 16px;
+        }
+        #main .item span{
+            width: 16px;
+            height: 16px;
+            background: #ccc;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        #main .item span:hover{
+            cursor: pointer;
+        }
+.centents{
+    margin-top: 30px;
+    height: 405px;
+}
+.centents .centent1{
+    height: 403px;
+    width: 290px;
+    border: 1px solid #eaeaea;
+    float: left;
+}
+.centents .centent1 .title{
+height: 58px;
+line-height: 58px;
+font-size: 18px;
+color: #2771fa;
+text-align: center;
+width: 100%;
+}
+.centents .centent1 .image{
+    width: 260px;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
+    margin:0 auto;
+}
+.centents .centent1 img{
+      width: 260px;
+    height: 170px;
+}
+.centents .centent1 .wz {
+    width: 260px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.centents .centent1 .wz li{
+    padding-top: 10px;
+}
+.centents .centent1 .a{
+  position:relative;
+left:200px;
+top: -10px;
+color: gray;
+font-size: 14px;
+}
+.centents .centent1 .b{
+  position:relative;
+left:200px;
+top: -11px;
+color: gray;
+font-size: 14px;
+}
+.centents .centent1 .c{
+      position:relative;
+left:200px;
+top: 10px;
+color: gray;
+font-size: 14px;
+}
+.foot{
+    padding-top:60px;
+    margin:0 auto;
+    width: 1400px;
+}
+.foot #zhensuo{
+    margin:0 auto;
+}
+.foot #zhensuo h3{
+    color:blue;
+    margin-left:100px;
+     margin-bottom: 20px;
+}
+.foot .content0{
+
+    padding-top: 20px;
+    height: 60px;
+    float: left;
+    border: 1px solid #000;
+    width: 1400px;
+    margin:0 auto;
+    
+}
+.foot .content0 a{
+    float: left;
+    display: block;
+    width: 330px;
+    height: 30px;
+
+}
+.foots {
+    margin-top: 100px;
+}
+.foots .a{
+    text-align: center;
+}
+.foots .a a{
+    color: #bbb;
+}
+.foots .banquan{
+    text-align: center;
+}
+.foots .banquan a{
+    color:#aaa;
+}

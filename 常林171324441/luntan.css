@@ -1,0 +1,322 @@
+*{margin: 0;
+	padding:0;
+}
+/*设置公共的宽度  */
+.comWidth{
+width: 1200px;
+margin: 0 auto;	
+}
+/*清楚浮动*/
+.clearfix::after{
+	content: '';
+	display: block;
+	clear:both;
+}
+a{
+    text-decoration:none;
+}
+#qqqq{
+    width: 1100px;
+    margin:0 auto;
+}
+#tou{
+    width: 1536px;
+    margin:0 auto;
+    border-bottom: 3px solid blue;
+}
+.toubu{
+
+height: 70px;
+width:1100px;
+margin: 0 auto;
+ }
+.toubu img{
+	float: left;
+	margin-top: 15px;
+}
+.liebiao{
+height: 70px;
+line-height: 70px;
+margin-left: 80px;
+float: left;
+}
+.liebiao ul{
+height: 70px;
+}
+.liebiao ul li{
+	font-size: 18px;
+	float: left;
+	padding-left: 5px;
+	list-style: none;
+	height: 70px;
+	width: 100px;
+}
+li a{
+	color:black;
+	text-decoration:none;
+	display: block;
+}
+a:hover{
+	color: blue;
+    cursor:pointer;
+}
+.toubu .tubiao1{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png) 0 0;
+    margin-top: 10px;
+}
+.toubu .tubiao2{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/beijing1.png) 0 0;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.toubu .tubiao3{
+    float:left;
+    width: 48px;
+    height: 48px;
+    background: url(tupian/背景2.png);
+    background-position:50px 0px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.width{
+    position: relative;
+    width: 1200px;
+    margin:0 auto;
+    margin-top: 30px;
+    height: 350px;
+}
+#main{      left: 0;
+            width: 645px;
+            height:282px;
+            margin: 0 auto;
+            position: absolute;
+            margin-top: 30px;
+        
+        }
+        #main .scollimg{
+            width: 645px;
+            height:282px;
+            position: relative;
+        }
+        #main .scollimg img{
+            position: absolute;
+            width: 645px;
+            height:282px;
+            top: 0;
+            left: 0;
+        }
+        #main .btn{
+            width: 645px;
+            height: 220px;
+            position: absolute;
+            top:117px;
+            left: 0;
+        }
+        #main .btn>div{
+            width: 100px;
+            height: 220px;
+            background: #fff;
+            opacity: 0;
+        }
+        #main .btn：hover>div{
+            opacity: 0.35;
+        }
+        #main .btn #btnleft{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #main .btn #btnright{
+            position: absolute;
+            top: 0;
+            right:0;
+        }
+        /*左右button里的三角形*/
+        .triangle{
+             margin-top: 50px;
+            width: 0;
+            height: 0;
+            border-width:70px 40px;
+            border-style: solid ;
+        }
+
+        #main .btn #btnleft .triangle{
+            border-color: transparent #ccc transparent  transparent;
+        }
+        #main .btn #btnright .triangle{
+            margin-left: 20px;
+            border-color: transparent transparent transparent #ccc;
+        }
+        #main .item{
+            position: absolute;
+            bottom: 30px;
+            left: 70px;
+            width: 200px;
+            height: 16px;
+        }
+        #main .item span{
+            width: 16px;
+            height: 16px;
+            background: #ccc;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        #main .item span:hover{
+            cursor: pointer;
+        }
+        .tab-container{
+width: 398px;
+height: 280px;
+border:1px gray solid;
+margin: 0 auto;
+position: absolute;
+margin-top: 30px;
+margin-left: 700px;
+overflow: hidden; 
+line-height: 30px;
+}
+/*tab-head begin*/
+.tab-head{
+width: 400px;
+height:30px;
+left:0;
+background: gray;
+position: absolute;
+left:-1px;//这里设置-1是为了li的border与最外层的border重合
+}
+.tab-head li{
+    text-align: center;
+float:left;
+height: 29px;
+line-height: 29px;
+width: 198px;
+overflow: hidden;
+padding: 0 1px;
+border-bottom: 1px solid gray;
+background: #ffeeee;
+}
+
+li.select{
+background: #fff;
+padding: 0;
+border-left: 1px solidgray;
+border-right: 1px solidgray;
+border-bottom: 1px solid #fff;
+}
+/*tab-head end tab-panel begin*/
+.tab-panel{
+position: relative;
+width: 100%;
+height: 85%;
+top: 15%;
+-webkit-transition:all 0.01s linear;//切换过渡效果
+}
+.tab-panel section{
+position: absolute;
+display: inline-block;
+width: 100%;
+height: 100%;
+}
+#panel-1{
+left: 0;
+}
+#panel-2{
+left: 100%;
+}
+.centents{
+    width: 1000px;
+    margin:0 auto;
+}
+.centents .centent1{
+    margin-top: 50px;
+}
+.centents .centent1 .title{
+    font-size: 18px;
+    width: 1556px;
+    margin:0 auto;
+    background: url(tupian/luntan-bcak1.png)no-repeat;
+}
+.centents .centent1 .right1{
+    font-size: 12px;
+  color:gray;
+    margin-right:0px;
+    width: 100px;
+    height: 50px;
+    float: right;
+    background: url(tupian/luntan-back2.png) no-repeat;
+}
+.centents .centent1 .right2{
+        font-size: 12px;
+  color:gray;
+    margin-right:0px;
+    width: 100px;
+    height: 50px;
+    float: right;
+    background: url(tupian/luntan-back3.png) no-repeat;
+}
+.centents .centent1 .centent1-1{
+    border-bottom: 2px solid blue;
+    height: 150px;
+    margin-top: 50px;
+    width: 1000px;
+}
+.centents .centent1 .centent1-1 .a1{
+    margin-right: 20px;
+    float: left;
+    border: 1px solid gray;
+    width: 225px;
+    height: 120px;
+}
+.centents .centent1 .centent1-1 .a1 a{
+    display: block;
+    padding-top: 30px;
+    height: 20px;
+}
+.centents .centent1 .centent1-1 .b1{
+    width: 210px;
+    margin-left: 40px;
+    margin-top: -20px;
+}
+.centents .centent1 .centent1-1 .b1 .b1s{
+    font-size: 24px;
+    margin-left: 20px;
+}
+.centents .centent1 .right3{
+    float: left;
+    font-size: 12px;
+  color:gray;
+    margin-left:920px;
+    width: 100px;
+    height: 50px;
+    background: url(tupian/luntan-back2.png) no-repeat;
+}
+.centents .centent1 .right4{
+    margin-top: -50px;
+    float: left;
+        font-size: 12px;
+  color:gray;
+    margin-left:810px;
+    width: 100px;
+    background: url(tupian/luntan-back3.png) no-repeat;
+}
+.foots {
+    margin-top: 100px;
+}
+.foots .a{
+    text-align: center;
+}
+.foots .a a{
+    color: #bbb;
+}
+.foots .banquan{
+    text-align: center;
+}
+.foots .banquan a{
+    color:#aaa;
+}
