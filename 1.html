@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<Script Language="JavaScript"> 
+　　 var timedate= new Date("October 1,2010"); 
+　　 var times= "2010年国庆节"; 
+　　 var now = new Date(); 
+　　 var date = timedate.getTime() - now.getTime(); 
+　　 var time = Math.floor(date / (1000 * 60 * 60 * 24)); 
+　　 if (time >= 0) 
+　　 document.write( "现在离"+times+"还有: "+time +"天")
+</Script>
+<style type="text/css">
+*{
+padding: 0;
+margin: 0;
+border:0;
+}
+body{
+text-align: center;
+}
+ul{
+list-style: none;
+}
+a{
+text-decoration: none;
+color: #ff6666;
+font-family: Arial;
+}
+.tab-container{
+width: 398px;
+height: 200px;
+border:1px #ffcccc solid;
+margin: 0 auto;
+position: relative;
+overflow: hidden; 
+}
+/*tab-head begin*/
+.tab-head{
+width: 400px;
+height:30px;
+left:0;
+background: #ffcccc;
+position: absolute;
+left:-1px;//这里设置-1是为了li的border与最外层的border重合
+}
+.tab-head li{
+float:left;
+height: 29px;
+line-height: 29px;
+width: 198px;
+overflow: hidden;
+padding: 0 1px;
+border-bottom: 1px solid #ffcccc;
+background: #ffeeee;
+}
+
+li.select{
+background: #fff;
+padding: 0;
+border-left: 1px solid#ffcccc;
+border-right: 1px solid#ffcccc;
+border-bottom: 1px solid #fff;
+}
+/*tab-head end tab-panel begin*/
+.tab-panel{
+position: relative;
+width: 100%;
+height: 85%;
+top: 15%;
+-webkit-transition:all 0.01s linear;//切换过渡效果
+}
+.tab-panel section{
+position: absolute;
+display: inline-block;
+width: 100%;
+height: 100%;
+}
+#panel-1{
+left: 0;
+}
+#panel-2{
+left: 100%;
+}
+</style>
+</head>
+<body>
+<div class="tab-container">
+<ul class="tab-head">
+ <li id="1" class="select" onmousedown="$(this)"><a href="#">Tab1</a></li>
+ <li id="2" onmousedown="$(this)"><a href="#">Tab2</a></li>
+</ul>
+<div id="tab-panel" class="tab-panel">
+<section id="panel-1"><p>这是panel-1</p></section>
+<section id="panel-2"><p>这是panel-2</p></section>
+</div>
+ </div>
+ <script type="text/javascript">
+ function $(id){
+var lis = document.getElementsByTagName('li');
+for (var i = 0; i < lis.length; i++) {
+lis[i].setAttribute('class','');
+};
+id.setAttribute('class','select');
+var ele = document.getElementById('tab-panel');
+ele.style.left=-(id.id-1)+'00%';
+ }
+ </script>
+</body>
+</html>
