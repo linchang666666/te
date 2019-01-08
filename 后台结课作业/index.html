@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>青海省旅游局</title>
+	<script type="text/javascript">
+		function tabs(id) {
+       var oTab = document.getElementById(id);
+       var aH2 = oTab.getElementsByTagName("h2");
+       var aDiv = oTab.getElementsByTagName("div");
+       for (var i = 0; i < aH2.length; i++) {
+           aH2[i].index = i;
+           aH2[i].onclick = function() {
+               for (var i = 0; i < aH2.length; i++) {
+                   aH2[i].className = "";
+                   aDiv[i].style.display = "none";
+                   aDiv[this.index].className = "";
+                   aDiv[this.index].className = "content";
+               }
+               this.className = "active";
+               aDiv[this.index].style.display = "block";
+           };
+       }
+   }
+     window.onload = function() {
+     	tabs("tab1");
+     	tabs("tab2");
+     	tabs("tab3");
+     };
+ </script>
+</head>
+<body>
+<div class="header clearfix">
+	<div class="left">
+		<img src="img/logo.gif">
+		<h1>青海省旅游局</h1>
+		<p class="p1">QingHai Tourist Administration</p>
+	</div>
+	<div class="right clearfix">
+		<div class="top ">
+			<a href="#" class="bianju">青海旅游资讯网 　|　 收藏本站</a>
+			<a href="#" class="jiantou">旧版入口</a>
+		</div>
+		<div class="bottom clearfix">
+			<p  align=right class="riqi">2016年05月26日</p>
+			 <p  align=right class="riqi2">农历 四月二十 下月5日 芒种</p>
+		</div>
+	</div>
+</div>
+
+
+<div class="daohang clearfix">
+	<ul>
+		<li class="shouye"><a href="#">首页</a></li>
+		<li class="qita"><a href="#">政务公开</a></li>
+		<li class="qita"><a href="#">政务大厅</a></li>
+		<li class="qita"><a href="#">公共服务</a></li>
+		<li class="qita"><a href="#">在线办事</a></li>
+		<li class="qita"><a href="#">旅游资料</a></li>
+		<li class="qita"><a href="#">资料下载</a></li>
+		<li class="qita"><a href="#">招商项目</a></li>
+	</ul>
+</div>
+
+
+<div class="content1 clearfix">
+	<img src="img/centent1.png">
+	<div class="content-right">
+		<div id="tab">
+		      <h2 class="active bai">旅游要闻</h2>
+		      <h2>新闻动态</h2>
+		      <div class="content"><p class="shang">大美青海境外旅游宣传广告备受青睐</p>
+		      	<p class="xia">　　为扩大“大美青海”旅游品牌在境外客源地市场的知名度，省旅游局在香港网络、韩国首尔地铁投放青...</p>
+		      	<p class="left teshu">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right teshu">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      	<p class="left">到2020年，我省乡村旅游接待点将达到4...</p>
+		      	<p class="right">[2016-04-28]</p>
+		      </div>
+		      <div>娱乐内容</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="content2 comWidth clearfix">
+	<div class="content2-1">
+		<div id="tab">
+		      <h2 class="active bai">媒体关注</h2>
+		      <h2>通知公告</h2>
+		      <div class="content clearfix">
+		      	<img src="img/content2-1.png">
+		      	<p class="shang">从A数到Z 26个字母看懂总理...</p>
+		      	<p class="xia">　　3月16日上午，十二届全国人大四次会议闭幕后，李克强总理在人民大...</p>
+		      	<p class="teshu">外国记者积极评价中国两会</p>
+		      	<p class="teshu">李克强：发展“新经济”是要培育新动能...</p>
+		      	<p class="teshu">李克强：两岸关系和平发展造福两岸民众</p>
+		      	<p class="teshu">总理要求国办工作人员上两会“听民意、...</p>
+		      	<p class="teshu">总理在两会“团组”讲话释放出那些重要...</p>
+		      </div>
+		      <div>娱乐内容</div>
+		</div>
+	</div>
+
+
+	<div class="content2-2">
+		<div id="tab">
+		      <h2 class="active bai">信息公开</h2>
+		      <h2>政务消息</h2>
+		      <div class="content">
+		      	<p class="teshu">青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      	<p>青海省旅游局2016年部门预算编制说..</p>
+		      </div>
+		      <div>娱乐内容</div>
+		</div>
+	</div>
+
+
+	<div class="content2-3">
+		<div class="head clearfix"><h2 class="juse">职能机构</h2>
+	</div>
+		<div class="s1 color1">对外联络处</div>
+		<div class="s1 color2">规划建设处</div>
+		<div class="s1 color3">行业管理处</div>
+		<div class="s1 color4">财务统计处</div>
+		<div class="s1 color5">质量监督处</div>
+		<div class="s1 color6">人事教育处</div>
+		<div class="s1 color7">机关党委</div>
+		<div class="s1 color8">旅游协会</div>
+		<div class="s1 color9">政策法规处</div>
+		<div class="s1 color10">办公室</div>
+		<div class="teshu">市场宣传处</div></div>
+</div>
+
+
+
+
+
+<div class="content3 comWidth clearfix">
+	<div class="content3-1">政务<br>
+信息</div>
+	<div class="content3-2"></div>
+	<div class="content3-3 clearfix">
+		<div class="imgp left"><img src="img/content3-1.png">局长信箱</div>
+		<div class="imgp"><img src="img/content3-2.png">投诉咨询</div>
+		<div class="imgp"><img src="img/content3-3.png">调查征集</div>
+		<div class="imgp"><img src="img/content3-4.png">公开指南</div>
+		<div class="imgp"><img src="img/content3-5.png">领导团队</div>
+		<div class="imgp"><img src="img/content3-6.png">职责职能</div>
+		<div class="imgp"><img src="img/content3-7.png">机构设置</div>
+		<div class="imgp"><img src="img/content3-8.png">招商项目</div>
+	</div>
+	<div class="content3-4">
+		<div class="content3-4-1">信息<br>查询</div>
+		<div class="content3-4-2"></div>
+		<div class="content3-4-3">
+			<ul>
+				<li class="top">旅游要素查询</li>
+				<li>会议资料查询</li>
+				<li>旅游资料查询</li>
+				<li>旅游信息查询</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="content4 comWidth clearfix">
+	<div class="content4-1">
+		<div class="top"><h2>各市动态</h2></div>
+		<ul>
+			<li class="hr">海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+			<li>海北州旅游“春潮”行动检查组深入刚察县...</li>
+		</ul>
+	</div>
+
+	<div class="content4-2 clearfix">
+		<div class="top"><h2>部门信息</h2></div>
+		<div class="gray"></div>
+		<ul>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+			<li>【规划建设处】果洛州旅游局督导检查玛多县上...</li>
+			<li class="right">2016.05.31</li>
+		</ul>
+	</div>
+
+	<div class="content4-3">
+		<div class="head"><h2 class="juse">各市动态</h2></div>
+		<ul>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+			<li>我省多措并举开拓入境旅游...</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+<div class="content5 comWidth clearfix">
+	<div class="left">
+		<div class="top"><h2>业务系统</h2></div>
+		<div class="gray"></div>
+		<ul>
+			<li class="bianju">旅行社统计管理系统</li>
+			<li>星级饭店统计调查管理系统</li>
+			<li class="bianju">出境组团签证专办员管理系统</li>
+			<li>接待入境旅游者统计系统</li>
+			<li class="bianju">行业财务信息系统</li>
+			<li>A级景区管理系统</li>
+			<li class="bianju">全国旅游项目管理系统</li>
+			<li>假日旅游预报系统</li>
+		</ul>
+	</div>
+	<div class="right">
+			<ul class="zuo">
+				<li class="b1">政务要点</li>
+				<li class="b2">中心概况</li>
+				<li class="b3">办事指南</li>
+			</ul>	
+			<div class="solid"></div>
+			<ul class="you">
+				<li class="b4">政策法规</li>
+				<li class="b5">政务公开</li>
+				<li class="b6">网上办事</li>
+			</ul>
+		<img src="img/content5-right-r.png">
+	</div>
+</div>
+
+
+
+
+<div class="content6 comWidth clearfix">
+	<div class="content6-1">
+		<p>青海省各地旅游局</p>
+		<ul>
+			<li>西宁市旅游局</li>
+			<li>济南州旅游局</li>
+			<li>海北州旅游局</li>
+			<li>湟中县旅游局</li>
+			<li>玛多县旅游局</li>
+			<li>海晏县旅游局</li>
+			<li>玛沁县旅游局</li>
+			<li>大通县旅游局</li>
+			<li>格尔木市旅游局</li>
+			<li>金银滩旅游</li>
+			<li>贵德县旅游开发管委会</li>
+		</ul>
+	</div>
+
+
+	<div class="content6-2">
+		<p>全国各地旅游局</p>
+		<ul>
+			<li>北京旅游网</li>
+			<li>天津旅游网</li>
+			<li>河北旅游网</li>
+			<li>山西旅游网</li>
+			<li>内蒙古旅游网</li>
+			<li>辽宁旅游网</li>
+			<li>吉林旅游网</li>
+			<li>黑龙江旅游网</li>
+			<li>上海旅游网</li>
+			<li>江苏旅游网</li>
+			<li>浙江旅游网</li>
+		</ul>
+
+		<ul>
+			<li>安徽旅游网</li>
+			<li>福建旅游网</li>
+			<li>山东旅游网</li>
+			<li>河南旅游网</li>
+			<li>湖北旅游网</li>
+			<li>湖南旅游网</li>
+			<li>广东旅游网</li>
+			<li>广西旅游网</li>
+			<li>海南旅游网</li>
+			<li>重庆旅游网</li>
+			<li>四川旅游网</li>
+		</ul>
+
+		<ul>
+			<li>贵州旅游网</li>
+			<li>云南旅游网</li>
+			<li>西藏旅游网</li>
+			<li>甘肃旅游网</li>
+			<li>宁夏旅游网</li>
+			<li>青海旅游网</li>
+			<li>新疆旅游网</li>
+			<li>香港旅游发展局</li>
+			<li>澳门特别行政区旅游局</li>
+			<li>兵团旅游网</li>
+		</ul>
+	</div>
+	<div class="content6-3">
+		<p>合作伙伴</p>
+		<ul>
+			<li>青海省人民政府</li>
+			<li>国家旅游局</li>
+			<li>青海旅游摄影</li>
+			<li>青海新闻网</li>
+			<li>新华网青海频道</li>
+			<li>西部机场集团</li>
+			<li>西北旅游网</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="foot">
+	<img src="img/foot.png">
+	<p>CopyRight © 2005-2015 青海省旅游局 All Right Reserved.<br> 主办单位  青海省旅游局  通信地址  青海省西宁市黄河路156号  青ICP备08000144号</p>
+</div>
+</body>
+</html>
